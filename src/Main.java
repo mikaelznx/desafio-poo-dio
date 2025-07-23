@@ -9,13 +9,13 @@ public class Main {
     public static void main(String[] args) {
         Curso curso1 = new Curso();
         curso1.setTitulo("curso java");
-        curso1.setDescricao("descrição curso java");
-        curso1.setCargaHoraria(8);
+        curso1.setDescricao("descrição curso java poo");
+        curso1.setCargaHoraria(10);
 
         Curso curso2 = new Curso();
         curso2.setTitulo("curso js");
         curso2.setDescricao("descrição curso js");
-        curso2.setCargaHoraria(4);
+        curso2.setCargaHoraria(5);
 
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("mentoria de java");
@@ -33,21 +33,21 @@ public class Main {
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
 
-        Dev devCamila = new Dev();
-        devCamila.setNome("Camila");
-        devCamila.inscreverBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        devCamila.progredir();
-        devCamila.progredir();
+        Dev devMik = new Dev();
+        devMik.setName("Mikael");
+        devMik.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Mikael:" + devMik.getConteudosInscritos());
+        devMik.progredir();
+        devMik.progredir();
         System.out.println("-");
-        System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
-        System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
-        System.out.println("XP:" + devCamila.calcularTotalXp());
+        System.out.println("Conteúdos Inscritos Mikael:" + devMik.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos Mikael:" + devMik.getConteudosConcluidos());
+        System.out.println("XP:" + devMik.calcularTotalXp());
 
         System.out.println("-------");
 
         Dev devJoao = new Dev();
-        devJoao.setNome("Joao");
+        devJoao.setName("Joao");
         devJoao.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos João:" + devJoao.getConteudosInscritos());
         devJoao.progredir();
